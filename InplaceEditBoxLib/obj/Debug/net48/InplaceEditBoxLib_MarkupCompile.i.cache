@@ -4,7 +4,7 @@
 library
 C#
 .cs
-D:\Downloads\InplaceEditBoxLib-master\source\InplaceEditBoxLib\obj\Debug\net48\
+C:\Projects\ProcraStructor\source\InplaceEditBoxLib\obj\Debug\net48\
 InplaceEditBoxLib
 none
 false
@@ -16,5 +16,5 @@ TRACE;DEBUG;NETFRAMEWORK;NET48;
 20-564181424
 Themes\DarkBrushs.xaml;Themes\Generic.xaml;Themes\LightBrushs.xaml;Views\EditBox.xaml;
 
-False
+True
 

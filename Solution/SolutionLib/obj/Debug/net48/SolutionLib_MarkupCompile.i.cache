@@ -4,7 +4,7 @@
 library
 C#
 .cs
-D:\Downloads\InplaceEditBoxLib-master\source\Solution\SolutionLib\obj\Debug\net48\
+C:\Projects\ProcraStructor\source\Solution\SolutionLib\obj\Debug\net48\
 SolutionLib
 none
 false
@@ -13,8 +13,8 @@ TRACE;DEBUG;NETFRAMEWORK;NET48;
 34-2050342852
 
 271360147455
-21-1000517987
+21-573188133
 Resources\Files\Light\Document_16x.xaml;Resources\Files\Light\Document_24x.xaml;Resources\Files\Light\Document_256x.xaml;Resources\Files\Light\Document_32x.xaml;Resources\Files\Light\Document_48x.xaml;Resources\Files\Light\Document_64x.xaml;Resources\Folders\Light\FolderOpen_256x.xaml;Resources\Folders\Light\FolderOpen_32x.xaml;Resources\Folders\Light\FolderOpen_32xLG.xaml;Resources\Folders\Light\FolderOpen_32xMD.xaml;Resources\Folders\Light\FolderOpen_32xSM.xaml;Resources\Folders\Light\FolderOpen_48x.xaml;Resources\Folders\Light\FolderOpen_64x.xaml;Resources\Folders\Light\Folder_256x.xaml;Resources\Folders\Light\Folder_25x.xaml;Resources\Folders\Light\Folder_32x.xaml;Resources\Folders\Light\Folder_32xLG.xaml;Resources\Folders\Light\Folder_32xMD.xaml;Resources\Folders\Light\Folder_32xSM.xaml;Resources\Folders\Light\Folder_48x.xaml;Resources\Folders\Light\Folder_64x.xaml;Resources\LightIcons.xaml;Resources\Projects\Light\Application_12x.xaml;Resources\Projects\Light\Application_16x.xaml;Resources\Projects\Light\Application_256x.xaml;Resources\Projects\Light\Application_32x.xaml;Resources\Projects\Light\Application_64x.xaml;Resources\Solutions\Light\AppFlyout_12x.xaml;Resources\Solutions\Light\AppFlyout_16x.xaml;Resources\Solutions\Light\AppFlyout_256x.xaml;Resources\Solutions\Light\AppFlyout_32x.xaml;Resources\Solutions\Light\AppFlyout_48x.xaml;Resources\Solutions\Light\AppFlyout_64x.xaml;Themes\Generic.xaml;
 
-False
+True
 
