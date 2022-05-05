@@ -1,0 +1,45 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.0": {
+      "ServiceLocator/1.0.0": {
+        "dependencies": {
+          "ExplorerLib": "1.0.0",
+          "Microsoft.NETFramework.ReferenceAssemblies": "1.0.2"
+        },
+        "runtime": {
+          "ServiceLocator.dll": {}
+        }
+      },
+      "Microsoft.NETFramework.ReferenceAssemblies/1.0.2": {},
+      "ExplorerLib/1.0.0": {
+        "runtime": {
+          "ExplorerLib.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ServiceLocator/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.NETFramework.ReferenceAssemblies/1.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-5/cSEVld+px/CuRrbohO/djfg6++eR6zGpy88MgqloXvkj//WXWpFZyu/OpkXPN0u5m+dN/EVwLNYFUxD4h2+A==",
+      "path": "microsoft.netframework.referenceassemblies/1.0.2",
+      "hashPath": "microsoft.netframework.referenceassemblies.1.0.2.nupkg.sha512"
+    },
+    "ExplorerLib/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

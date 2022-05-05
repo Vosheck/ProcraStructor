@@ -1,0 +1,56 @@
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <UseWPF>true</UseWPF>
+    <TargetFramework>net48</TargetFramework>
+    <LangVersion>latestmajor</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Services\ExplorerLib\ExplorerLib.csproj">
+      <!--Project>{5a90b227-3c80-4b85-ae40-ee17fccd246d}</Project-->
+      <Name>ExplorerLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Services\ServiceLocator\ServiceLocator.csproj">
+      <!--Project>{b17bd968-1684-4f3a-b55a-6f42da4a6830}</Project-->
+      <Name>ServiceLocator</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Solution\SolutionLibModels\SolutionLibModels.csproj">
+      <!--Project>{2a48d068-6c21-4758-9a85-74f40c2ab068}</Project-->
+      <Name>SolutionModelsLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Solution\SolutionLib\SolutionLib.csproj">
+      <!--Project>{21809114-6c3f-41cc-8a72-649ac4a214bb}</Project-->
+      <Name>SolutionLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dirkster.UserNotifications" Version="1.5.1" />
+    <PackageReference Include="Dirkster.TreeLib" Version="1.2.0" />
+    <PackageReference Include="System.Data.SQLite" Version="1.0.111" />
+  </ItemGroup>
+
+  <!-- This is for testing NetCore3 Preview 8 only -->
+  <!--PropertyGroup>
+    <WarningsAsErrors></WarningsAsErrors>
+  </PropertyGroup-->
+  
+  <!-- Begin issue 255: The following section can be removed penging the bug: https://github.com/dotnet/wpf/issues/255 
+  <PropertyGroup>
+    <DisableImplicitFrameworkReferences Condition="'$(TargetFramework)' == 'net40' or '$(TargetFramework)' == 'net35'">true</DisableImplicitFrameworkReferences>
+  </PropertyGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'net40'">
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Xaml" />
+  </ItemGroup>
+ End issue 255 -->
+
+</Project>

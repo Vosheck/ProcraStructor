@@ -1,0 +1,15 @@
+D:\Downloads\InplaceEditBoxLib-master\source\Services\ServiceLocator\bin\Debug\net5.0-windows\ServiceLocator.deps.json
+D:\Downloads\InplaceEditBoxLib-master\source\Services\ServiceLocator\bin\Debug\net5.0-windows\ServiceLocator.dll
+D:\Downloads\InplaceEditBoxLib-master\source\Services\ServiceLocator\bin\Debug\net5.0-windows\ref\ServiceLocator.dll
+D:\Downloads\InplaceEditBoxLib-master\source\Services\ServiceLocator\bin\Debug\net5.0-windows\ServiceLocator.pdb
+D:\Downloads\InplaceEditBoxLib-master\source\Services\ServiceLocator\bin\Debug\net5.0-windows\ExplorerLib.dll
+D:\Downloads\InplaceEditBoxLib-master\source\Services\ServiceLocator\bin\Debug\net5.0-windows\ExplorerLib.pdb
+D:\Downloads\InplaceEditBoxLib-master\source\Services\ServiceLocator\obj\Debug\net5.0-windows\ServiceLocator.csproj.AssemblyReference.cache
+D:\Downloads\InplaceEditBoxLib-master\source\Services\ServiceLocator\obj\Debug\net5.0-windows\ServiceLocator.GeneratedMSBuildEditorConfig.editorconfig
+D:\Downloads\InplaceEditBoxLib-master\source\Services\ServiceLocator\obj\Debug\net5.0-windows\ServiceLocator.AssemblyInfoInputs.cache
+D:\Downloads\InplaceEditBoxLib-master\source\Services\ServiceLocator\obj\Debug\net5.0-windows\ServiceLocator.AssemblyInfo.cs
+D:\Downloads\InplaceEditBoxLib-master\source\Services\ServiceLocator\obj\Debug\net5.0-windows\ServiceLocator.csproj.CoreCompileInputs.cache
+D:\Downloads\InplaceEditBoxLib-master\source\Services\ServiceLocator\obj\Debug\net5.0-windows\ServiceLocator.csproj.CopyComplete
+D:\Downloads\InplaceEditBoxLib-master\source\Services\ServiceLocator\obj\Debug\net5.0-windows\ServiceLocator.dll
+D:\Downloads\InplaceEditBoxLib-master\source\Services\ServiceLocator\obj\Debug\net5.0-windows\ref\ServiceLocator.dll
+D:\Downloads\InplaceEditBoxLib-master\source\Services\ServiceLocator\obj\Debug\net5.0-windows\ServiceLocator.pdb

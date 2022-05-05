@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "dgSpecHash": "GPjEV4tYTYAYDLuXsM4G8YyMUuYUnB8ksMq+HANnu7xrvJpugr9pdH5NDzQS9krOHrxCy/8FpQRioeVm7vHM9w==",
+  "success": true,
+  "projectFilePath": "C:\\Projects\\ProcraStructor\\source\\InPlaceEditBoxDemo\\InPlaceEditBoxDemo.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Vosheck\\.nuget\\packages\\dirkster.treelib\\1.2.0\\dirkster.treelib.1.2.0.nupkg.sha512",
+    "C:\\Users\\Vosheck\\.nuget\\packages\\dirkster.usernotifications\\1.5.1\\dirkster.usernotifications.1.5.1.nupkg.sha512",
+    "C:\\Users\\Vosheck\\.nuget\\packages\\entityframework\\6.2.0\\entityframework.6.2.0.nupkg.sha512",
+    "C:\\Users\\Vosheck\\.nuget\\packages\\system.data.sqlite\\1.0.111\\system.data.sqlite.1.0.111.nupkg.sha512",
+    "C:\\Users\\Vosheck\\.nuget\\packages\\system.data.sqlite.core\\1.0.111\\system.data.sqlite.core.1.0.111.nupkg.sha512",
+    "C:\\Users\\Vosheck\\.nuget\\packages\\system.data.sqlite.ef6\\1.0.111\\system.data.sqlite.ef6.1.0.111.nupkg.sha512",
+    "C:\\Users\\Vosheck\\.nuget\\packages\\system.data.sqlite.linq\\1.0.111\\system.data.sqlite.linq.1.0.111.nupkg.sha512",
+    "C:\\Users\\Vosheck\\.nuget\\packages\\dirkster.inplaceeditboxlib\\1.4.2\\dirkster.inplaceeditboxlib.1.4.2.nupkg.sha512"
+  ],
+  "logs": []
+}

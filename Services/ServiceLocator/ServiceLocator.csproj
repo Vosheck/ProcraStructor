@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <UseWPF>true</UseWPF>
+    <TargetFramework>net48</TargetFramework>
+    <LangVersion>latestmajor</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+      <ProjectReference Include="..\ExplorerLib\ExplorerLib.csproj">
+        <Project>{5a90b227-3c80-4b85-ae40-ee17fccd246d}</Project>
+        <Name>ExplorerLib</Name>
+      </ProjectReference>
+  </ItemGroup>
+
+</Project>

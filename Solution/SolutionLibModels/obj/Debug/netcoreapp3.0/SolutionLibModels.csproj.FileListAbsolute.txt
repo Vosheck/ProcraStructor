@@ -1,0 +1,10 @@
+D:\Downloads\InplaceEditBoxLib-master\source\Solution\SolutionLibModels\bin\Debug\netcoreapp3.0\SolutionLibModels.deps.json
+D:\Downloads\InplaceEditBoxLib-master\source\Solution\SolutionLibModels\bin\Debug\netcoreapp3.0\SolutionLibModels.dll
+D:\Downloads\InplaceEditBoxLib-master\source\Solution\SolutionLibModels\bin\Debug\netcoreapp3.0\SolutionLibModels.pdb
+D:\Downloads\InplaceEditBoxLib-master\source\Solution\SolutionLibModels\obj\Debug\netcoreapp3.0\SolutionLibModels.csproj.AssemblyReference.cache
+D:\Downloads\InplaceEditBoxLib-master\source\Solution\SolutionLibModels\obj\Debug\netcoreapp3.0\SolutionLibModels.GeneratedMSBuildEditorConfig.editorconfig
+D:\Downloads\InplaceEditBoxLib-master\source\Solution\SolutionLibModels\obj\Debug\netcoreapp3.0\SolutionLibModels.AssemblyInfoInputs.cache
+D:\Downloads\InplaceEditBoxLib-master\source\Solution\SolutionLibModels\obj\Debug\netcoreapp3.0\SolutionLibModels.AssemblyInfo.cs
+D:\Downloads\InplaceEditBoxLib-master\source\Solution\SolutionLibModels\obj\Debug\netcoreapp3.0\SolutionLibModels.csproj.CoreCompileInputs.cache
+D:\Downloads\InplaceEditBoxLib-master\source\Solution\SolutionLibModels\obj\Debug\netcoreapp3.0\SolutionLibModels.dll
+D:\Downloads\InplaceEditBoxLib-master\source\Solution\SolutionLibModels\obj\Debug\netcoreapp3.0\SolutionLibModels.pdb

@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "ServiceLocator/1.0.0": {
+        "dependencies": {
+          "ExplorerLib": "1.0.0"
+        },
+        "runtime": {
+          "ServiceLocator.dll": {}
+        }
+      },
+      "ExplorerLib/1.0.0": {
+        "runtime": {
+          "ExplorerLib.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ServiceLocator/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ExplorerLib/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,3 @@
+is_global = true
+build_property.RootNamespace = ServiceLocator
+build_property.ProjectDir = C:\Projects\ProcraStructor\source\Services\ServiceLocator\

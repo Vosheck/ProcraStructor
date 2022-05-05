@@ -1,0 +1,11 @@
+D:\Downloads\InplaceEditBoxLib-master\source\Services\ExplorerLib\bin\Debug\net40\ExplorerLib.dll
+D:\Downloads\InplaceEditBoxLib-master\source\Services\ExplorerLib\bin\Debug\net40\ExplorerLib.pdb
+D:\Downloads\InplaceEditBoxLib-master\source\Services\ExplorerLib\obj\Debug\net40\ExplorerLib.csproj.AssemblyReference.cache
+D:\Downloads\InplaceEditBoxLib-master\source\Services\ExplorerLib\obj\Debug\net40\ExplorerLib.Local.Strings.resources
+D:\Downloads\InplaceEditBoxLib-master\source\Services\ExplorerLib\obj\Debug\net40\ExplorerLib.csproj.GenerateResource.cache
+D:\Downloads\InplaceEditBoxLib-master\source\Services\ExplorerLib\obj\Debug\net40\ExplorerLib.GeneratedMSBuildEditorConfig.editorconfig
+D:\Downloads\InplaceEditBoxLib-master\source\Services\ExplorerLib\obj\Debug\net40\ExplorerLib.AssemblyInfoInputs.cache
+D:\Downloads\InplaceEditBoxLib-master\source\Services\ExplorerLib\obj\Debug\net40\ExplorerLib.AssemblyInfo.cs
+D:\Downloads\InplaceEditBoxLib-master\source\Services\ExplorerLib\obj\Debug\net40\ExplorerLib.csproj.CoreCompileInputs.cache
+D:\Downloads\InplaceEditBoxLib-master\source\Services\ExplorerLib\obj\Debug\net40\ExplorerLib.dll
+D:\Downloads\InplaceEditBoxLib-master\source\Services\ExplorerLib\obj\Debug\net40\ExplorerLib.pdb

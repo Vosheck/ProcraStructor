@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "SYxzw+XOtId4H6NgPCfOHAfbXKtVytiKZLPhWsctudys9A3VFjpcGQ566E7yr5rhLq0QQO9h6BHhURRBShKTMg==",
+  "success": true,
+  "projectFilePath": "C:\\Projects\\ProcraStructor\\source\\InplaceEditBoxLib\\InplaceEditBoxLib.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Vosheck\\.nuget\\packages\\dirkster.usernotifications\\1.5.1\\dirkster.usernotifications.1.5.1.nupkg.sha512"
+  ],
+  "logs": []
+}

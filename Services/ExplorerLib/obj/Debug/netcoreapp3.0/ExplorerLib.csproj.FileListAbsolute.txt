@@ -1,0 +1,12 @@
+D:\Downloads\InplaceEditBoxLib-master\source\Services\ExplorerLib\bin\Debug\netcoreapp3.0\ExplorerLib.deps.json
+D:\Downloads\InplaceEditBoxLib-master\source\Services\ExplorerLib\bin\Debug\netcoreapp3.0\ExplorerLib.dll
+D:\Downloads\InplaceEditBoxLib-master\source\Services\ExplorerLib\bin\Debug\netcoreapp3.0\ExplorerLib.pdb
+D:\Downloads\InplaceEditBoxLib-master\source\Services\ExplorerLib\obj\Debug\netcoreapp3.0\ExplorerLib.csproj.AssemblyReference.cache
+D:\Downloads\InplaceEditBoxLib-master\source\Services\ExplorerLib\obj\Debug\netcoreapp3.0\ExplorerLib.Local.Strings.resources
+D:\Downloads\InplaceEditBoxLib-master\source\Services\ExplorerLib\obj\Debug\netcoreapp3.0\ExplorerLib.csproj.GenerateResource.cache
+D:\Downloads\InplaceEditBoxLib-master\source\Services\ExplorerLib\obj\Debug\netcoreapp3.0\ExplorerLib.GeneratedMSBuildEditorConfig.editorconfig
+D:\Downloads\InplaceEditBoxLib-master\source\Services\ExplorerLib\obj\Debug\netcoreapp3.0\ExplorerLib.AssemblyInfoInputs.cache
+D:\Downloads\InplaceEditBoxLib-master\source\Services\ExplorerLib\obj\Debug\netcoreapp3.0\ExplorerLib.AssemblyInfo.cs
+D:\Downloads\InplaceEditBoxLib-master\source\Services\ExplorerLib\obj\Debug\netcoreapp3.0\ExplorerLib.csproj.CoreCompileInputs.cache
+D:\Downloads\InplaceEditBoxLib-master\source\Services\ExplorerLib\obj\Debug\netcoreapp3.0\ExplorerLib.dll
+D:\Downloads\InplaceEditBoxLib-master\source\Services\ExplorerLib\obj\Debug\netcoreapp3.0\ExplorerLib.pdb

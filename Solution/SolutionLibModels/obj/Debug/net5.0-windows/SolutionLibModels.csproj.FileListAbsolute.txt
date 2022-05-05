@@ -1,0 +1,12 @@
+D:\Downloads\InplaceEditBoxLib-master\source\Solution\SolutionLibModels\bin\Debug\net5.0-windows\SolutionLibModels.deps.json
+D:\Downloads\InplaceEditBoxLib-master\source\Solution\SolutionLibModels\bin\Debug\net5.0-windows\SolutionLibModels.dll
+D:\Downloads\InplaceEditBoxLib-master\source\Solution\SolutionLibModels\bin\Debug\net5.0-windows\ref\SolutionLibModels.dll
+D:\Downloads\InplaceEditBoxLib-master\source\Solution\SolutionLibModels\bin\Debug\net5.0-windows\SolutionLibModels.pdb
+D:\Downloads\InplaceEditBoxLib-master\source\Solution\SolutionLibModels\obj\Debug\net5.0-windows\SolutionLibModels.csproj.AssemblyReference.cache
+D:\Downloads\InplaceEditBoxLib-master\source\Solution\SolutionLibModels\obj\Debug\net5.0-windows\SolutionLibModels.GeneratedMSBuildEditorConfig.editorconfig
+D:\Downloads\InplaceEditBoxLib-master\source\Solution\SolutionLibModels\obj\Debug\net5.0-windows\SolutionLibModels.AssemblyInfoInputs.cache
+D:\Downloads\InplaceEditBoxLib-master\source\Solution\SolutionLibModels\obj\Debug\net5.0-windows\SolutionLibModels.AssemblyInfo.cs
+D:\Downloads\InplaceEditBoxLib-master\source\Solution\SolutionLibModels\obj\Debug\net5.0-windows\SolutionLibModels.csproj.CoreCompileInputs.cache
+D:\Downloads\InplaceEditBoxLib-master\source\Solution\SolutionLibModels\obj\Debug\net5.0-windows\SolutionLibModels.dll
+D:\Downloads\InplaceEditBoxLib-master\source\Solution\SolutionLibModels\obj\Debug\net5.0-windows\ref\SolutionLibModels.dll
+D:\Downloads\InplaceEditBoxLib-master\source\Solution\SolutionLibModels\obj\Debug\net5.0-windows\SolutionLibModels.pdb

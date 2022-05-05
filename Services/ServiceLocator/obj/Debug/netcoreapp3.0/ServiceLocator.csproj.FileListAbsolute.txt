@@ -1,0 +1,13 @@
+D:\Downloads\InplaceEditBoxLib-master\source\Services\ServiceLocator\bin\Debug\netcoreapp3.0\ServiceLocator.deps.json
+D:\Downloads\InplaceEditBoxLib-master\source\Services\ServiceLocator\bin\Debug\netcoreapp3.0\ServiceLocator.dll
+D:\Downloads\InplaceEditBoxLib-master\source\Services\ServiceLocator\bin\Debug\netcoreapp3.0\ServiceLocator.pdb
+D:\Downloads\InplaceEditBoxLib-master\source\Services\ServiceLocator\bin\Debug\netcoreapp3.0\ExplorerLib.dll
+D:\Downloads\InplaceEditBoxLib-master\source\Services\ServiceLocator\bin\Debug\netcoreapp3.0\ExplorerLib.pdb
+D:\Downloads\InplaceEditBoxLib-master\source\Services\ServiceLocator\obj\Debug\netcoreapp3.0\ServiceLocator.csproj.AssemblyReference.cache
+D:\Downloads\InplaceEditBoxLib-master\source\Services\ServiceLocator\obj\Debug\netcoreapp3.0\ServiceLocator.GeneratedMSBuildEditorConfig.editorconfig
+D:\Downloads\InplaceEditBoxLib-master\source\Services\ServiceLocator\obj\Debug\netcoreapp3.0\ServiceLocator.AssemblyInfoInputs.cache
+D:\Downloads\InplaceEditBoxLib-master\source\Services\ServiceLocator\obj\Debug\netcoreapp3.0\ServiceLocator.AssemblyInfo.cs
+D:\Downloads\InplaceEditBoxLib-master\source\Services\ServiceLocator\obj\Debug\netcoreapp3.0\ServiceLocator.csproj.CoreCompileInputs.cache
+D:\Downloads\InplaceEditBoxLib-master\source\Services\ServiceLocator\obj\Debug\netcoreapp3.0\ServiceLocator.csproj.CopyComplete
+D:\Downloads\InplaceEditBoxLib-master\source\Services\ServiceLocator\obj\Debug\netcoreapp3.0\ServiceLocator.dll
+D:\Downloads\InplaceEditBoxLib-master\source\Services\ServiceLocator\obj\Debug\netcoreapp3.0\ServiceLocator.pdb

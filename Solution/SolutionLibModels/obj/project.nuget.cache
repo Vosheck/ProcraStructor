@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "/J0tRH0v4//6Rl0qLvwujjZrshHby5kM8NNvOxxj9mhVoPLt2S+gWFYl+iHzFNAwLqd2gZzS4YStQhrnLQOOUA==",
+  "success": true,
+  "projectFilePath": "C:\\Projects\\ProcraStructor\\source\\Solution\\SolutionLibModels\\SolutionLibModels.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Vosheck\\.nuget\\packages\\dirkster.treelib\\1.2.0\\dirkster.treelib.1.2.0.nupkg.sha512",
+    "C:\\Users\\Vosheck\\.nuget\\packages\\system.data.sqlite.core\\1.0.111\\system.data.sqlite.core.1.0.111.nupkg.sha512"
+  ],
+  "logs": []
+}

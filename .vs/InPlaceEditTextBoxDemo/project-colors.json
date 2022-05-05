@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "ba1c7851-45f1-41d5-b9fc-486d89424b20": {
+      "ProjectGuid": "ba1c7851-45f1-41d5-b9fc-486d89424b20",
+      "DisplayName": "InPlaceEditBoxDemo",
+      "ColorIndex": 0
+    },
+    "5a90b227-3c80-4b85-ae40-ee17fccd246d": {
+      "ProjectGuid": "5a90b227-3c80-4b85-ae40-ee17fccd246d",
+      "DisplayName": "ExplorerLib",
+      "ColorIndex": 1
+    },
+    "b17bd968-1684-4f3a-b55a-6f42da4a6830": {
+      "ProjectGuid": "b17bd968-1684-4f3a-b55a-6f42da4a6830",
+      "DisplayName": "ServiceLocator",
+      "ColorIndex": 2
+    },
+    "21809114-6c3f-41cc-8a72-649ac4a214bb": {
+      "ProjectGuid": "21809114-6c3f-41cc-8a72-649ac4a214bb",
+      "DisplayName": "SolutionLib",
+      "ColorIndex": 3
+    },
+    "2a48d068-6c21-4758-9a85-74f40c2ab068": {
+      "ProjectGuid": "2a48d068-6c21-4758-9a85-74f40c2ab068",
+      "DisplayName": "SolutionLibModels",
+      "ColorIndex": 4
+    },
+    "a8bb5702-1a2f-46b3-aac2-d62e2e16a722": {
+      "ProjectGuid": "a8bb5702-1a2f-46b3-aac2-d62e2e16a722",
+      "DisplayName": "InplaceEditBoxLib",
+      "ColorIndex": 5
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 6
+}

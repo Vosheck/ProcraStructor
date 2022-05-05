@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Dirkster.InplaceEditBoxLib</id>
+    <version>1.4.2</version>
+    <authors>https://github.com/Dirkster99/InplaceEditBoxLib</authors>
+    <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <projectUrl>https://github.com/Dirkster99/InplaceEditBoxLib</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/Dirkster99/InplaceEditBoxLib/master/SwitchToDesignMode_64x.png</iconUrl>
+    <description>InplaceEditBoxLib provides a WPF overlay textbox control</description>
+    <releaseNotes>Add rename canceled command to notify when the user has canceled editing text</releaseNotes>
+    <copyright>2014-2022</copyright>
+    <tags>wpf inplace-edit text overlay mvvm c# .net metro black light themed control library</tags>
+    <repository url="https://github.com/Dirkster99/InplaceEditBoxLib" />
+    <dependencies>
+      <group targetFramework=".NETFramework4.8">
+        <dependency id="Dirkster.UserNotifications" version="1.5.1" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Projects\ProcraStructor\source\InplaceEditBoxLib\bin\Debug\net48\InplaceEditBoxLib.dll" target="lib\net48\InplaceEditBoxLib.dll" />
+  </files>
+</package>

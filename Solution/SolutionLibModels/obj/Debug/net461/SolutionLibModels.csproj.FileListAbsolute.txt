@@ -1,0 +1,12 @@
+D:\Downloads\InplaceEditBoxLib-master\source\Solution\SolutionLibModels\bin\Debug\net461\SolutionLibModels.dll
+D:\Downloads\InplaceEditBoxLib-master\source\Solution\SolutionLibModels\bin\Debug\net461\SolutionLibModels.pdb
+D:\Downloads\InplaceEditBoxLib-master\source\Solution\SolutionLibModels\bin\Debug\net461\TreeLib.dll
+D:\Downloads\InplaceEditBoxLib-master\source\Solution\SolutionLibModels\bin\Debug\net461\System.Data.SQLite.dll
+D:\Downloads\InplaceEditBoxLib-master\source\Solution\SolutionLibModels\obj\Debug\net461\SolutionLibModels.csproj.AssemblyReference.cache
+D:\Downloads\InplaceEditBoxLib-master\source\Solution\SolutionLibModels\obj\Debug\net461\SolutionLibModels.GeneratedMSBuildEditorConfig.editorconfig
+D:\Downloads\InplaceEditBoxLib-master\source\Solution\SolutionLibModels\obj\Debug\net461\SolutionLibModels.AssemblyInfoInputs.cache
+D:\Downloads\InplaceEditBoxLib-master\source\Solution\SolutionLibModels\obj\Debug\net461\SolutionLibModels.AssemblyInfo.cs
+D:\Downloads\InplaceEditBoxLib-master\source\Solution\SolutionLibModels\obj\Debug\net461\SolutionLibModels.csproj.CoreCompileInputs.cache
+D:\Downloads\InplaceEditBoxLib-master\source\Solution\SolutionLibModels\obj\Debug\net461\SolutionLibModels.csproj.CopyComplete
+D:\Downloads\InplaceEditBoxLib-master\source\Solution\SolutionLibModels\obj\Debug\net461\SolutionLibModels.dll
+D:\Downloads\InplaceEditBoxLib-master\source\Solution\SolutionLibModels\obj\Debug\net461\SolutionLibModels.pdb

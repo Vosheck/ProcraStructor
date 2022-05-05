@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <UseWPF>true</UseWPF>
+    <TargetFramework>net48</TargetFramework>
+    <LangVersion>latestmajor</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dirkster.TreeLib" version="1.2.0" />
+    <PackageReference Include="System.Data.SQLite.Core" version="1.0.111" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,12 @@
+D:\Downloads\InplaceEditBoxLib-master\source\Services\ServiceLocator\bin\Debug\net40\ServiceLocator.dll
+D:\Downloads\InplaceEditBoxLib-master\source\Services\ServiceLocator\bin\Debug\net40\ServiceLocator.pdb
+D:\Downloads\InplaceEditBoxLib-master\source\Services\ServiceLocator\bin\Debug\net40\ExplorerLib.dll
+D:\Downloads\InplaceEditBoxLib-master\source\Services\ServiceLocator\bin\Debug\net40\ExplorerLib.pdb
+D:\Downloads\InplaceEditBoxLib-master\source\Services\ServiceLocator\obj\Debug\net40\ServiceLocator.csproj.AssemblyReference.cache
+D:\Downloads\InplaceEditBoxLib-master\source\Services\ServiceLocator\obj\Debug\net40\ServiceLocator.GeneratedMSBuildEditorConfig.editorconfig
+D:\Downloads\InplaceEditBoxLib-master\source\Services\ServiceLocator\obj\Debug\net40\ServiceLocator.AssemblyInfoInputs.cache
+D:\Downloads\InplaceEditBoxLib-master\source\Services\ServiceLocator\obj\Debug\net40\ServiceLocator.AssemblyInfo.cs
+D:\Downloads\InplaceEditBoxLib-master\source\Services\ServiceLocator\obj\Debug\net40\ServiceLocator.csproj.CoreCompileInputs.cache
+D:\Downloads\InplaceEditBoxLib-master\source\Services\ServiceLocator\obj\Debug\net40\ServiceLocator.csproj.CopyComplete
+D:\Downloads\InplaceEditBoxLib-master\source\Services\ServiceLocator\obj\Debug\net40\ServiceLocator.dll
+D:\Downloads\InplaceEditBoxLib-master\source\Services\ServiceLocator\obj\Debug\net40\ServiceLocator.pdb

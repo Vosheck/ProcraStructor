@@ -1,0 +1,14 @@
+D:\Downloads\InplaceEditBoxLib-master\source\Services\ExplorerLib\bin\Debug\net5.0-windows\ExplorerLib.deps.json
+D:\Downloads\InplaceEditBoxLib-master\source\Services\ExplorerLib\bin\Debug\net5.0-windows\ExplorerLib.dll
+D:\Downloads\InplaceEditBoxLib-master\source\Services\ExplorerLib\bin\Debug\net5.0-windows\ref\ExplorerLib.dll
+D:\Downloads\InplaceEditBoxLib-master\source\Services\ExplorerLib\bin\Debug\net5.0-windows\ExplorerLib.pdb
+D:\Downloads\InplaceEditBoxLib-master\source\Services\ExplorerLib\obj\Debug\net5.0-windows\ExplorerLib.csproj.AssemblyReference.cache
+D:\Downloads\InplaceEditBoxLib-master\source\Services\ExplorerLib\obj\Debug\net5.0-windows\ExplorerLib.Local.Strings.resources
+D:\Downloads\InplaceEditBoxLib-master\source\Services\ExplorerLib\obj\Debug\net5.0-windows\ExplorerLib.csproj.GenerateResource.cache
+D:\Downloads\InplaceEditBoxLib-master\source\Services\ExplorerLib\obj\Debug\net5.0-windows\ExplorerLib.GeneratedMSBuildEditorConfig.editorconfig
+D:\Downloads\InplaceEditBoxLib-master\source\Services\ExplorerLib\obj\Debug\net5.0-windows\ExplorerLib.AssemblyInfoInputs.cache
+D:\Downloads\InplaceEditBoxLib-master\source\Services\ExplorerLib\obj\Debug\net5.0-windows\ExplorerLib.AssemblyInfo.cs
+D:\Downloads\InplaceEditBoxLib-master\source\Services\ExplorerLib\obj\Debug\net5.0-windows\ExplorerLib.csproj.CoreCompileInputs.cache
+D:\Downloads\InplaceEditBoxLib-master\source\Services\ExplorerLib\obj\Debug\net5.0-windows\ExplorerLib.dll
+D:\Downloads\InplaceEditBoxLib-master\source\Services\ExplorerLib\obj\Debug\net5.0-windows\ref\ExplorerLib.dll
+D:\Downloads\InplaceEditBoxLib-master\source\Services\ExplorerLib\obj\Debug\net5.0-windows\ExplorerLib.pdb

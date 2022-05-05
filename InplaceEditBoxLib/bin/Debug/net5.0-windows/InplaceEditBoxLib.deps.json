@@ -1,0 +1,64 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "InplaceEditBoxLib/1.4.2": {
+        "dependencies": {
+          "Dirkster.UserNotifications": "1.5.1"
+        },
+        "runtime": {
+          "InplaceEditBoxLib.dll": {}
+        }
+      },
+      "Dirkster.UserNotifications/1.5.1": {
+        "runtime": {
+          "lib/netcoreapp3.0/UserNotification.dll": {
+            "assemblyVersion": "1.5.1.0",
+            "fileVersion": "1.5.1.0"
+          }
+        },
+        "resources": {
+          "lib/netcoreapp3.0/de-DE/UserNotification.resources.dll": {
+            "locale": "de-DE"
+          },
+          "lib/netcoreapp3.0/es-ES/UserNotification.resources.dll": {
+            "locale": "es-ES"
+          },
+          "lib/netcoreapp3.0/fr-FR/UserNotification.resources.dll": {
+            "locale": "fr-FR"
+          },
+          "lib/netcoreapp3.0/hi/UserNotification.resources.dll": {
+            "locale": "hi"
+          },
+          "lib/netcoreapp3.0/it-IT/UserNotification.resources.dll": {
+            "locale": "it-IT"
+          },
+          "lib/netcoreapp3.0/nl-NL/UserNotification.resources.dll": {
+            "locale": "nl-NL"
+          },
+          "lib/netcoreapp3.0/zh-Hans/UserNotification.resources.dll": {
+            "locale": "zh-Hans"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "InplaceEditBoxLib/1.4.2": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Dirkster.UserNotifications/1.5.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6YYMp8lqt9igz4dfo6453VnuXROcYE5ufxEagydgChWbr7rvg64C6JEedPm9RrwMcVS0NtY01OYXqbYhp7QBMg==",
+      "path": "dirkster.usernotifications/1.5.1",
+      "hashPath": "dirkster.usernotifications.1.5.1.nupkg.sha512"
+    }
+  }
+}
