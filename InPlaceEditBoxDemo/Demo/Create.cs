@@ -7,172 +7,30 @@
 
     internal class Create
     {
-        internal static Task ObjectsAsync(ISolution solutionRoot)
+        internal static Task ObjectsAsync(ISolution solutionRoot,bool firstProject)
         {
-            return Task.Run(() => { Objects(solutionRoot); });
+            return Task.Run(() => { Objects(solutionRoot,firstProject); });
         }
 
-        internal static void Objects(ISolution solutionRoot)
+        internal static void Objects(ISolution solutionRoot,bool firstProject)
         {
-            var root = solutionRoot.AddSolutionRootItem("F2 to rename");
+            var root = solutionRoot.AddSolutionRootItem("New Project");
 
             root.IsItemExpanded = true;
 
             // Assume for this demo that the root item cannot be renamed
             // root.SetIsReadOnly(true);
-
-            var xmlFolder = solutionRoot.AddRootChild("Enter to add a task", SolutionItemType.TopTask) as IItemChildren;
-            var anotherFolder= solutionRoot.AddRootChild("Delete to remove a task", SolutionItemType.TopTask) as IItemChildren;
-
-           
-
-            if (xmlFolder == null)
-                throw new System.NotSupportedException();
-
-            xmlFolder.IsItemExpanded = true;
-            //var test = xmlFolder.AddFile("test");
-            // XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-            /*var newTest = new CreateTestObject("Open-XML-SDK"
-                            ,new string []{ "BinaryFormatConverter"
-                                                ,"DocumentFormat.OpenXml.Tests"
-                                                ,"DocumentFormat.OpenXml"
-                                                ,"build"},
-                            new string[] {  ".gitattributes"
-                                                ,".gitignore"
-                                                ,"DocumentFormat.OpenXml.snk"
-                                                ,"GitVersion.yml"
-                                                ,"LICENSE.txt"
-                                                ,"Open-XML-SDK.sln"
-                                                ,"README.md"
-                                                ,"appveyor.yml"
-                                                ,"dir.props"
-                                                ,"dir.targets" }
-            );*/
-
-            /*CreateProject(solutionRoot, newTest.Project, xmlFolder, newTest.Folders, newTest.Files);
-            // XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-            newTest = new CreateTestObject("XmlNotePad"
-                            , new string[]{ "images"
-                                           ,"src"},
-                            new string[] {  ".gitattributes"
-                                            ,".gitignore"
-                                            ,"LICENSE"
-                                            ,"README.md" }
-            );
-
-            CreateProject(solutionRoot, newTest.Project, xmlFolder, newTest.Folders, newTest.Files);
-            // XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-            newTest = new CreateTestObject("OpenXml"
-                            , new string[]{ "Libs"
-                                           ,"WordToHtml", "ZipHelper"},
-                            new string[] {  ".gitattributes"
-                                            ,".gitignore"
-                                            ,"LICENSE"
-                                            ,"OpenXml.sln"
-                                            ,"README.md" }
-            );
-
-            CreateProject(solutionRoot, newTest.Project, xmlFolder, newTest.Folders, newTest.Files);
-            // XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-            newTest = new CreateTestObject("Microsoft_Virtual_Academy_Xml_To_Srt"
-                            , new string[]{ "MVAXml2Subs.Tests"
-                                           ,"MVAXml2Subs"},
-                            new string[] {  ".gitattributes"
-                                            ,".gitignore"
-                                            ,"LICENSE"
-                                            ,"MVAXml2Subs.sln"
-                                            ,"README.md" }
-            );
-
-            CreateProject(solutionRoot, newTest.Project, xmlFolder, newTest.Folders, newTest.Files);
-
-            // XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-            newTest = new CreateTestObject("Xml2Markdown"
-                            , new string[]{ "Xml2Markdown" },
-                            new string[] {  ".gitattributes"
-                                            ,".gitignore"
-                                            ,"LICENSE"
-                                            ,"Xml2Markdown.sln"
-                                            ,"README.md" }
-            );
-
-            CreateProject(solutionRoot, newTest.Project, xmlFolder, newTest.Folders, newTest.Files);
-
-            // XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-            newTest = new CreateTestObject("OpenXmlDocumentLibrary"
-                            , new string[] { "OpenXmlDocumentLibrary", "OpenXmlLibrary.Tests" },
-                            new string[] {  ".gitattributes"
-                                            ,".gitignore"
-                                            ,"changelog.md"
-                                            ,"OpenXmlLibrary.sln"
-                                            ,"README.md" }
-            );
-
-            CreateProject(solutionRoot, newTest.Project, xmlFolder, newTest.Folders, newTest.Files);
-
-            // XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-            newTest = new CreateTestObject("XslTransformer"
-                            , new string[] { "XslTransformer.Core", "XslTransformer" },
-                            new string[] {  ".gitattributes"
-                                            ,".gitignore"
-                                            ,"LICENSE"
-                                            ,"XslTransformer.sln"
-                                            ,"README.md" }
-            );
-
-            CreateProject(solutionRoot, newTest.Project, xmlFolder, newTest.Folders, newTest.Files);
-
-            // XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-            newTest = new CreateTestObject("vscode"
-                            , new string[] { "build", "extensions", "i18n", "resources"
-                                           , "scripts", "src", "test" },
-                            null);
-
-            CreateProject(solutionRoot, newTest.Project, root, newTest.Folders, newTest.Files);
-
-            // XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-            newTest = new CreateTestObject("msbuild"
-                            , new string[] { "Samples", "branding", "build", "documentation"
-                                           , "ref", "setup", "src", "targets" },
-                            null);
-
-            CreateProject(solutionRoot, newTest.Project, root, newTest.Folders, newTest.Files);*/
-
-            /*string[] Projects = { "AvalonEdit", "AvalonDock", "Edi", "XmlNotePad", "XmlViewer", "MRULib", "MLib", "Visual Studio" };
-
-            foreach (var item in Projects)
+            if (firstProject)
             {
-                CreateProject(solutionRoot, item, root, null, null);
-           }
-
-
-            var lastItem = xmlFolder.FindChild("Open-XML-SDK") as IItemChildren;
-
-            if (lastItem == null)
-                throw new System.NotSupportedException();
-
-            if (lastItem != null)
-            {
-                lastItem.IsItemExpanded = true;
-
-                lastItem = lastItem.FindChild("DocumentFormat.OpenXml.Tests") as IItemChildren;
-
-                if (lastItem == null)
+                var xmlFolder = solutionRoot.AddRootChild("Enter to add a task", SolutionItemType.TopTask) as IItemChildren;
+                var anotherFolder= solutionRoot.AddRootChild("Delete to remove a task", SolutionItemType.TopTask) as IItemChildren;
+                
+                if (xmlFolder == null)
                     throw new System.NotSupportedException();
 
-                if (lastItem != null)
-                {
-                    lastItem.IsItemExpanded = true;
+                xmlFolder.IsItemExpanded = true;
+            }
 
-                    var lastFileItem = lastItem.FindChild("file_99");
-
-                    if (lastFileItem != null)
-                    {
-                        solutionRoot.SelectionChangedCommand.Execute(lastFileItem);
-                        //lastFileItem.IsItemSelected = true;
-                    }
-                }
-            }*/
         }
 
         /// <summary>

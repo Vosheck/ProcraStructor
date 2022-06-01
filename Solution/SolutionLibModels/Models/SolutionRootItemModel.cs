@@ -88,6 +88,7 @@
                 SolutionModel.SerializeItem(writer, item);
             }
             writer.WriteEndElement();
+            
         }
         #endregion IXmlSerializable methods
         #endregion methods

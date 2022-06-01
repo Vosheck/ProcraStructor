@@ -61,9 +61,11 @@
                     IndentChars = "  ",
                     CloseOutput = true
                 });
-
+                /*xmlWriter.WriteAttributeString("Version", Version.ToString());
+                xmlWriter.WriteAttributeString("MinorVersion", MinorVersion.ToString());*/
                 var dataContractSerializer = new DataContractSerializer(typeof(SolutionModel));
                 dataContractSerializer.WriteObject(xmlWriter, rootModel);
+                
             }
             finally
             {

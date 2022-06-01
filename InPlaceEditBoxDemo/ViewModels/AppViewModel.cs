@@ -1,4 +1,10 @@
-﻿namespace InPlaceEditBoxDemo.ViewModels
+﻿using System.Collections.ObjectModel;
+using System.IO;
+using System.Linq;
+using ServiceLocator;
+using SolutionLib;
+
+namespace InPlaceEditBoxDemo.ViewModels
 {
     using SolutionLib.Interfaces;
     using System.Windows.Input;
@@ -17,11 +23,16 @@
     internal class AppViewModel : Base.BaseViewModel
     {
         #region fields
-        private readonly SolutionLib.Interfaces.ISolution _SolutionBrowser;
+        /*private ISolution _currentTreeView;*/
+        private ObservableCollection<ISolution> listOfTreeViews=new ObservableCollection<ISolution>();
 
         private ICommand _SaveSolutionCommand;
         private ICommand _LoadSolutionCommand;
+        private ICommand _NewSolutionCommand;
+        private ICommand _NextSolutionCommand;
+        private ICommand _PreviousSolutionCommand;
         private bool _IsProcessing;
+        private int currentTreeViewIndex;
         #endregion fields
 
         #region constructors
@@ -31,8 +42,7 @@
         public AppViewModel()
         {
             _IsProcessing = false;
-            _SolutionBrowser = SolutionLib.Factory.RootViewModel();
-
+            listOfTreeViews.Add( SolutionLib.Factory.RootViewModel());
             LastFileAccess = UserDocDir + "\\" + "New Solution";
 
             // This is the Selected FilterIndex + 1 (starting at 1)
@@ -46,8 +56,18 @@
         /// </summary>
         public ISolution Solution
         {
-            get { return _SolutionBrowser; }
+            get
+            {
+                return listOfTreeViews[((currentTreeViewIndex % listOfTreeViews.Count) + listOfTreeViews.Count)%listOfTreeViews.Count];
+            }
         }
+
+        public ObservableCollection<ISolution> ListOfTreeViews => listOfTreeViews;
+
+
+        public string NextSolutionName => listOfTreeViews.Count < 2 ||IsProcessing ? "": listOfTreeViews[(((currentTreeViewIndex + 1) % listOfTreeViews.Count) + listOfTreeViews.Count)%listOfTreeViews.Count].GetRootItem().DisplayName+">";
+
+        public string PreviousSolutionName => listOfTreeViews.Count < 2|| IsProcessing ? "":"<" + listOfTreeViews[(((currentTreeViewIndex - 1) % listOfTreeViews.Count) + listOfTreeViews.Count)%listOfTreeViews.Count].GetRootItem().DisplayName;
 
         /// <summary>
         /// Gets a property to determine if application is currently processing
@@ -66,6 +86,66 @@
             }
         }
 
+        public ICommand NewSolutionCommand
+        {
+            get
+            {
+                if (_NewSolutionCommand == null)
+                {
+                    _NewSolutionCommand = new Base.RelayCommand<object>(async (p) =>
+                    {
+                        /*var solutionRoot = p as ISolution;
+
+                        if (solutionRoot == null)
+                            return;*/
+
+                        await NewSolutionCommand_ExecutedAsync();
+                    });
+                }
+                return _NewSolutionCommand;
+            }
+        }
+        public ICommand NextSolutionCommand
+        {
+            get
+            {
+                if (_NextSolutionCommand == null)
+                {
+                    _NextSolutionCommand = new Base.RelayCommand<object>(async (p) =>
+                    {
+                        /*var solutionRoot = p as ISolution;
+
+                        if (solutionRoot == null)
+                            return;*/
+
+                        await NextSolutionCommand_ExecutedAsync();
+                    });
+                }
+
+                return _NextSolutionCommand;
+            }
+        }
+        public ICommand PreviousSolutionCommand
+        {
+            get
+            {
+                if (_PreviousSolutionCommand == null)
+                {
+                    _PreviousSolutionCommand = new Base.RelayCommand<object>(async (p) =>
+                    {
+                        /*var solutionRoot = p as ISolution;
+
+                        if (solutionRoot == null)
+                            return;*/
+
+                        await PreviousSolutionCommand_ExecutedAsync();
+                    });
+                }
+
+                return _PreviousSolutionCommand;
+            }
+        }
+
         /// <summary>
         /// Gets a command that save the current <see cref="Solution"/> to storge.
         /// </summary>
@@ -77,12 +157,12 @@
                 {
                     _SaveSolutionCommand = new Base.RelayCommand<object>(async (p) =>
                     {
-                        var solutionRoot = p as ISolution;
+                        var solutionRoots = p as ObservableCollection<ISolution>;
 
-                        if (solutionRoot == null)
+                        if (solutionRoots == null&&solutionRoots.Count<1)
                             return;
 
-                        await SaveSolutionCommand_ExecutedAsync(solutionRoot);
+                        await SaveSolutionCommand_ExecutedAsync(solutionRoots);
                     });
                 }
 
@@ -101,9 +181,9 @@
                 {
                     _LoadSolutionCommand = new Base.RelayCommand<object>((p) =>
                     {
-                        var solutionRoot = p as ISolution;
+                        var solutionRoot = p as ObservableCollection<ISolution>;
 
-                        if (solutionRoot == null)
+                        if (solutionRoot == null&&solutionRoot.Count<1)
                             return;
 
                         LoadSolutionCommand_ExecutedAsync(solutionRoot);
@@ -127,7 +207,7 @@
         #region methods
         public void ResetDefaults()
         {
-            _SolutionBrowser.ResetToDefaults();
+            listOfTreeViews[currentTreeViewIndex].ResetToDefaults();
         }
 
         /// <summary>
@@ -138,7 +218,7 @@
             try
             {
                 IsProcessing = true;
-                await Demo.Create.ObjectsAsync(_SolutionBrowser);
+                await Demo.Create.ObjectsAsync(listOfTreeViews[currentTreeViewIndex],true);
             }
             finally
             {
@@ -146,45 +226,83 @@
             }
         }
 
-        private async Task SaveSolutionCommand_ExecutedAsync(ISolution solutionRoot)
+        private void RefreshOnPropertyChangeds()
         {
-            var explorer = ServiceLocator.ServiceContainer.Instance.GetService<IExplorer>();
+            OnPropertyChanged(nameof(Solution));
+            OnPropertyChanged(nameof(NextSolutionName));
+            OnPropertyChanged(nameof(PreviousSolutionName));
+        }
 
-            var result = explorer.SaveDocumentFile(LastFileAccess,
-                                                   UserDocDir,
-                                                   true,
-                                                   solutionRoot.SolutionFileFilter,
-                                                   solutionRoot.SolutionFileFilterDefault,
-                                                   SelectedFileExtFilterIndex);
-
-            if (result == null) // User clicked Cancel ...
-                return;
-
-            IsProcessing = true;
+        private async Task NewSolutionCommand_ExecutedAsync()
+        {
             try
             {
-                LastFileAccess = result.Filepath;
-                SelectedFileExtFilterIndex = result.SelectedFilterIndex;
-
-                // Convert to model and save model to file system
-                var solutionModel = new ViewModelModelConverter().ToModel(solutionRoot);
-
-                var filename_ext = System.IO.Path.GetExtension(result.Filepath);
-                switch (filename_ext)
-                {
-                    case ".solxml":
-                        SolutionModelsLib.Xml.Storage.WriteXmlToFile(result.Filepath, solutionModel);
-                        break;
-
-                    default:
-                        var st_result = await SaveSolutionFileAsync(result.Filepath, solutionModel);
-                        break;
-                }
+                IsProcessing = true;
+                listOfTreeViews.Add(Factory.RootViewModel());
+                currentTreeViewIndex = listOfTreeViews.Count - 1;
+                await Demo.Create.ObjectsAsync(listOfTreeViews[currentTreeViewIndex],false);
             }
             finally
             {
                 IsProcessing = false;
+                RefreshOnPropertyChangeds();
             }
+        }
+        
+        private async Task NextSolutionCommand_ExecutedAsync()
+        {
+            try
+            {
+                IsProcessing = true;
+                currentTreeViewIndex++;
+            }
+            finally
+            {
+                IsProcessing = false;
+                RefreshOnPropertyChangeds();
+            }
+        }
+        private async Task PreviousSolutionCommand_ExecutedAsync()
+        {
+            try
+            {
+                IsProcessing = true;
+                currentTreeViewIndex--;
+            }
+            finally
+            {
+                IsProcessing = false;
+                RefreshOnPropertyChangeds();
+            }
+        }
+
+        private async Task SaveSolutionCommand_ExecutedAsync(ObservableCollection<ISolution> solutionRoots)
+        {
+            IsProcessing = true;
+                try
+                {
+                    for (int i = 0; i < solutionRoots.Count; i++)
+                    {
+                        string currentName = solutionRoots[i].Root.ElementAt(0).DisplayName;
+                        for (int j = i+1; j < solutionRoots.Count; j++)
+                        {
+                            if (currentName == solutionRoots[j].Root.ElementAt(0).DisplayName)
+                            {
+                                MessageBox.Show("Project names can't be identical");
+                                return;
+                            }
+                        }
+                    }
+                    for (int i = 0; i < solutionRoots.Count; i++)
+                    {
+                        SolutionModelsLib.Xml.Storage.WriteXmlToFile(solutionRoots[i].Root.ElementAt(0).DisplayName+".solxml", new ViewModelModelConverter().ToModel(solutionRoots[i]));  
+                    }
+                }
+                finally
+                {
+                    IsProcessing = false;
+                }
+
         }
 
         /// <summary>
@@ -260,42 +378,40 @@
             return true;
         }
 
-        private void LoadSolutionCommand_ExecutedAsync(ISolution solutionRoot)
+         internal async Task LoadSolutionCommand_ExecutedAsync(ObservableCollection<ISolution> solutionRoots)
         {
-            var explorer = ServiceLocator.ServiceContainer.Instance.GetService<IExplorer>();
-
-            var result = explorer.FileOpen(solutionRoot.SolutionFileFilter,
-                                            LastFileAccess,
-                                            UserDocDir,
-                                            solutionRoot.SolutionFileFilterDefault,
-                                            SelectedFileExtFilterIndex);
-
-            if (result == null) // User clicked Cancel ...
-                return;
-
-            LastFileAccess = result.Filepath;
-            SelectedFileExtFilterIndex = result.SelectedFilterIndex;
-
-            // Read model from file system and convert model to viewmodel
-            var filename_ext = result.FileExtension;
-            int recordCount = 0;
-            ISolutionModel solutionModel = null;
-            switch (filename_ext)
+           // ObservableCollection<ISolution> solutionRoots = solutionRoot;
+           IsProcessing = true;
+            string[] files=Directory.GetFiles(AppDomain.CurrentDomain.BaseDirectory, "*.solxml");
+            if (files.Length < 1)
             {
-                case ".solxml":
-                    solutionModel = Storage.ReadXmlFromFile<ISolutionModel>(result.Filepath);
-                    break;
+                try
+                {
 
-                default:
-                    solutionModel = LoadSolutionFile(result.Filepath, out recordCount);
-                    break;
+                    await Demo.Create.ObjectsAsync(listOfTreeViews[currentTreeViewIndex],true);
+                }
+                finally
+                {
+                    IsProcessing = false;
+                }
+                return;
+            }
+            
+            for (int i = 0; i < files.Length; i++)
+            {
+                ISolutionModel solutionModel = Storage.ReadXmlFromFile<ISolutionModel>(files[i]);
+                
+                if(solutionRoots.Count<files.Length)
+                    solutionRoots.Add(Factory.RootViewModel());
+                new ViewModelModelConverter().ToViewModel(solutionModel, solutionRoots[i]);
+
+                var rootItem = solutionRoots[i].GetRootItem();  // Show items below root by default
+                if (rootItem != null)
+                    rootItem.IsItemExpanded = true;
             }
 
-            new ViewModelModelConverter().ToViewModel(solutionModel, solutionRoot);
-
-            var rootItem = solutionRoot.GetRootItem();  // Show items below root by default
-            if (rootItem != null)
-                rootItem.IsItemExpanded = true;
+            IsProcessing = false;
+            RefreshOnPropertyChangeds();
         }
 
         /// <summary>

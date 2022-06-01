@@ -232,9 +232,6 @@
         /// <param name="writer"></param>
         void IXmlSerializable.WriteXml(XmlWriter writer)
         {
-            writer.WriteAttributeString("Version", Version.ToString());
-            writer.WriteAttributeString("MinorVersion", MinorVersion.ToString());
-
             // RootItems are written here...
             if (Root != null)
             {

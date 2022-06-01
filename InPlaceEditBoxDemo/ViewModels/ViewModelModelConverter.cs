@@ -134,7 +134,8 @@
             List<IItemModel> itemsList = itemsSelected.ToList();
             for (int i = 0; i < dstIdItems.Count; i++)
             {
-                dstIdItems[i].IsChecked=dstIdItems[i].DetermineCheckState();
+                if(dstIdItems[i].Children.Count()>0)
+                    dstIdItems[i].IsChecked=dstIdItems[i].DetermineCheckState();
             }
 
             return solutionRoot;

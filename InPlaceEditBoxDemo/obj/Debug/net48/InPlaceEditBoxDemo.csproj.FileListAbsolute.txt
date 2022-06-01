@@ -88,3 +88,5 @@ C:\Projects\ProcraStructor\source\InPlaceEditBoxDemo\obj\Debug\net48\InPlaceEdit
 C:\Projects\ProcraStructor\source\InPlaceEditBoxDemo\obj\Debug\net48\InPlaceEditBoxDemo.csproj.CopyComplete
 C:\Projects\ProcraStructor\source\InPlaceEditBoxDemo\obj\Debug\net48\InPlaceEditBoxDemo.exe
 C:\Projects\ProcraStructor\source\InPlaceEditBoxDemo\obj\Debug\net48\InPlaceEditBoxDemo.pdb
+C:\Projects\ProcraStructor\source\InPlaceEditBoxDemo\bin\Debug\net48\Microsoft.Expression.Interactions.dll
+C:\Projects\ProcraStructor\source\InPlaceEditBoxDemo\bin\Debug\net48\System.Windows.Interactivity.dll

@@ -3,10 +3,24 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:z="http://schemas.microsoft.com/expression/2010/interactivity"
+        xmlns:inPlaceEditBoxDemo="clr-namespace:InPlaceEditBoxDemo"
         mc:Ignorable="d"
         Title="MainWindow"
         Height="650" Width="325"
         >
+    <z:Interaction.Triggers>
+            <z:EventTrigger EventName="Closing">
+                <z:InvokeCommandAction Command="{Binding SaveSolutionCommand}" CommandParameter="{Binding ListOfTreeViews}"/>
+            </z:EventTrigger>
+        <z:EventTrigger EventName="Loaded">
+            <z:InvokeCommandAction Command="{Binding LoadSolutionCommand}" CommandParameter="{Binding ListOfTreeViews}"/>
+        </z:EventTrigger>
+        </z:Interaction.Triggers>
+    <Window.InputBindings>
+        <KeyBinding Key="Left" Command="{Binding PreviousSolutionCommand}"/>
+        <KeyBinding Key="Right" Command="{Binding NextSolutionCommand}"/>
+    </Window.InputBindings>
     <Grid xmlns:convDemo="clr-namespace:InPlaceEditBoxDemo.Converters"
           xmlns:conv="clr-namespace:SolutionLib.Converters;assembly=SolutionLib"
           xmlns:views="clr-namespace:SolutionLib.Views;assembly=SolutionLib"
@@ -14,11 +28,10 @@
           xmlns:bindLocal="clr-namespace:InplaceEditBoxLib.Views;assembly=InplaceEditBoxLib"
           xmlns:behav="clr-namespace:InPlaceEditBoxDemo.Behaviours"
           
-          xmlns:sitemtype="clr-namespace:SolutionLib.Models;assembly=SolutionLib"
-          >
+          xmlns:sitemtype="clr-namespace:SolutionLib.Models;assembly=SolutionLib">
         <Grid.Resources>
             <convDemo:BoolToVisibilityConverter x:Key="boolToHiddenVisibilityConverter"
-                                            False="Hidden" True="Visible" />
+                                                False="Hidden" True="Visible" />
 
             <conv:ISolutionBaseItemToImageConverter x:Key="ISolutionBaseItemToImageConverter" />
             
@@ -167,25 +180,34 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <ToolBarTray Grid.Row="0" Background="Transparent">
+        <DockPanel Grid.Row="0" Background="Transparent">
             <ToolBar Background="Transparent">
                 <Button Content="Save"
                         Command="{Binding SaveSolutionCommand}"
-                        CommandParameter="{Binding Solution}"
+                        CommandParameter="{Binding ListOfTreeViews}"
                         ToolTip="Save solution to storage." Margin="3"/>
-                
                 <Button Content="Load"
                         Command="{Binding LoadSolutionCommand}"
-                        CommandParameter="{Binding Solution}"
+                        CommandParameter="{Binding ListOfTreeViews}"
                         ToolTip="Load solution from storage."  Margin="3"/>
+                <Button Content="{Binding PreviousSolutionName,UpdateSourceTrigger=PropertyChanged}"
+                        Command="{Binding PreviousSolutionCommand}"
+                        ToolTip="Select the previous project" Margin="3"
+                        />
+                <Button Content="+"
+                        Command="{Binding NewSolutionCommand}"
+                        ToolTip="Click to add a new project." Margin="3"/>
+                <Button Content="{Binding NextSolutionName,UpdateSourceTrigger=PropertyChanged}"
+                        Command="{Binding NextSolutionCommand}"
+                        ToolTip="Click to select the next project" Margin="3"/>
             </ToolBar>
-        </ToolBarTray>
+        </DockPanel>
 
         <ProgressBar Height="6" Grid.Row="1" IsIndeterminate="True"
                      Visibility="{Binding IsProcessing,Mode=OneWay,UpdateSourceTrigger=PropertyChanged, Converter={StaticResource boolToHiddenVisibilityConverter}}" />
 
         <TreeView Grid.Row="2"
-                  ItemsSource="{Binding Solution.Root}"
+                  ItemsSource="{Binding Solution.Root, UpdateSourceTrigger=PropertyChanged}"
             
                   VirtualizingStackPanel.IsVirtualizing="True"
                   VirtualizingStackPanel.VirtualizationMode="Standard"

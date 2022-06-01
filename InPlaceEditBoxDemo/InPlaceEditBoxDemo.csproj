@@ -30,6 +30,7 @@
     <PackageReference Include="Dirkster.UserNotifications" Version="1.5.1" />
     <PackageReference Include="Dirkster.TreeLib" Version="1.2.0" />
     <PackageReference Include="System.Data.SQLite" Version="1.0.111" />
+    <PackageReference Include="System.Windows.Interactivity.WPF" Version="2.0.20525" />
   </ItemGroup>
 
   <!-- This is for testing NetCore3 Preview 8 only -->

@@ -1,8 +1,12 @@
-﻿namespace InPlaceEditBoxDemo
+﻿using System.Collections.ObjectModel;
+using System.ComponentModel;
+using System.Windows.Interactivity;
+namespace InPlaceEditBoxDemo
 {
     using InPlaceEditBoxDemo.ViewModels;
     using ServiceLocator;
     using System.Windows;
+    
 
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -13,11 +17,12 @@
         {
             InitializeComponent();
 
-            ServiceInjector.InjectServices();      // Start-up services
+            ServiceInjector.InjectServices();
 
             Loaded += MainWindow_LoadedAsync;
         }
 
+        
         private async void MainWindow_LoadedAsync(object sender, RoutedEventArgs e)
         {
             Loaded -= MainWindow_LoadedAsync;
@@ -26,7 +31,8 @@
             this.DataContext = appVM;
 
             appVM.ResetDefaults();
-            await appVM.LoadSampleDataAsync();
+            await appVM.LoadSolutionCommand_ExecutedAsync(appVM.ListOfTreeViews);
         }
+
     }
 }

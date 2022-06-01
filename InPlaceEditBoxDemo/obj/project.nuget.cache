@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "GPjEV4tYTYAYDLuXsM4G8YyMUuYUnB8ksMq+HANnu7xrvJpugr9pdH5NDzQS9krOHrxCy/8FpQRioeVm7vHM9w==",
+  "dgSpecHash": "CeHuQpHFjm9YzrY9a+TBy3WoGD7F1uMqyXhNHyY6Kl1bP7nkAGDGw+uvgLb4iK5hjr25+hQwGNwtGEV/zjdCTw==",
   "success": true,
   "projectFilePath": "C:\\Projects\\ProcraStructor\\source\\InPlaceEditBoxDemo\\InPlaceEditBoxDemo.csproj",
   "expectedPackageFiles": [
@@ -11,6 +11,7 @@
     "C:\\Users\\Vosheck\\.nuget\\packages\\system.data.sqlite.core\\1.0.111\\system.data.sqlite.core.1.0.111.nupkg.sha512",
     "C:\\Users\\Vosheck\\.nuget\\packages\\system.data.sqlite.ef6\\1.0.111\\system.data.sqlite.ef6.1.0.111.nupkg.sha512",
     "C:\\Users\\Vosheck\\.nuget\\packages\\system.data.sqlite.linq\\1.0.111\\system.data.sqlite.linq.1.0.111.nupkg.sha512",
+    "C:\\Users\\Vosheck\\.nuget\\packages\\system.windows.interactivity.wpf\\2.0.20525\\system.windows.interactivity.wpf.2.0.20525.nupkg.sha512",
     "C:\\Users\\Vosheck\\.nuget\\packages\\dirkster.inplaceeditboxlib\\1.4.2\\dirkster.inplaceeditboxlib.1.4.2.nupkg.sha512"
   ],
   "logs": []
